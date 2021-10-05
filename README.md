@@ -49,7 +49,10 @@ This data was colleced using the Zomato API and last updated in 2017. Its purpos
 - Daniel: I am a second year Data Science Major from Abbotsford B.C., Canada.
 - Ross: one sentence about you!
 - Keiran: one sentence about you!
+## Images
 
+
+<img src ="images/test.png" width="100px">
 
 ## References
 [Kaggle Link to our Data Set](https://www.kaggle.com/shrutimehta/zomato-restaurants-data)
