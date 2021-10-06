@@ -12,7 +12,7 @@ The Zomato app is a hub of restaurant data and presents a very interesting colle
 
 In just an initial viewing of the data set many compelling research questions immediately surface. Is there a correlation between price and rating? How about delivery options and rating? Where are the best places to eat? Where are the cheapest places to eat? How can one optimize these different categories to attract the most customers to their restaurant? Or vice versa, can we produce a model to optimize customers finding their next favourite restaurant? our preliminary interests! As we continue to explore this data set more and more research questions will become apparent.
 
-In addition to the various analysis, there is great potential here for an engaging user-facing dashboard. The various location data points could allow for interesting and colorful visualzations of restaurant data based on a map. With the ratings scores and price averages you can display many different correlations using a variety of graphs
+In addition to the various analysis, there is great potential here for an engaging user-facing dashboard. The various location data points could allow for interesting and colorful visualzations of restaurant data based on a map. With the ratings scores and price averages you can display many different correlations using a variety of graphs.
 
 ## Describe your dataset in about 150-200 words
 
