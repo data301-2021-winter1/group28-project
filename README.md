@@ -47,8 +47,8 @@ This data was colleced using the Zomato API and last updated in 2017. Its purpos
 ## Team Members
 
 - Daniel: I am a second year Data Science Major from Abbotsford B.C., Canada.
-- Ross: one sentence about you!
-- Keiran: one sentence about you!
+- Ross: I am a second year Data Science Major from Bermuda.
+- Keiran: I am a second year Computer Science major from Bermuda!
 ## Images
 
 
