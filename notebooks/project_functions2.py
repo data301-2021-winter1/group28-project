@@ -42,6 +42,7 @@ def load_and_process(zomato_file_path, forex_file_path, countrycode_file_path):
     
     df2 = (
           df1.drop(df1.loc[df1["Aggregate rating"]==0.0].index)
+          
           .merge(countrycode_df, how="inner", on="Country Code")
           .assign(Currency=lambda x: x["Currency"].replace({"Indian Rupees(Rs.)":"INR","Dollar($)":"USD","Pounds(Ł)":"GBP","Brazilian Real(R$)":"BRL","Emirati Diram(AED)":"AED",
                                                       "Rand(R)":"ZAR","NewZealand($)":"NZD","Turkish Lira(TL)":"TRY","Botswana Pula(P)":"BWP","Indonesian Rupiah(IDR)":"IDR",
@@ -55,6 +56,8 @@ def load_and_process(zomato_file_path, forex_file_path, countrycode_file_path):
           .drop(["Country Code","Average exchange rate","Price range"], axis='columns')
           .reindex(["Country", "City", "Restaurant ID", "Restaurant Name", "Aggregate rating", "Longitude", "Latitude", "Cuisines", "Average_Cost", "Currency",
                        "Has Table booking", "Has Online delivery", "Is delivering now", "Votes"], axis=1)
+          
+          .reset_index()
       )
 
     return df2
