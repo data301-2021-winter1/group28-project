@@ -1,5 +1,7 @@
+#Importing libraries
 import pandas as pd
 
+#Define clean_and_merge_zomato() method
 def clean_and_merge_zomato(zomato_file_path, country_codes_file_path):
     """
     Loads, cleans, processes, and wrangles zomato.csv and Country-Code.xlsx
@@ -20,7 +22,7 @@ def clean_and_merge_zomato(zomato_file_path, country_codes_file_path):
                       "Has Online delivery": "Has Online Delivery",
                       "Rating text": "Rating Text",
                       "Is delivering now": "Is Delivering Now",
-                      "Price Range": "Price Range",
+                      "Price range": "Price Range",
                       "Aggregate rating": "Aggregate Rating",})
     )
 
@@ -32,8 +34,10 @@ def clean_and_merge_zomato(zomato_file_path, country_codes_file_path):
     #Method chain 3 - process/wrangle/merge country_df and zomato_df
     zomato_cleaned = (
      pd.merge(zomato_df,country_df, how = "inner",on = "Country Code")
-     .drop(['Country Code'], axis = 'columns')
      .query('Country=="India"')
+     .assign(x = zomato_df["Aggregate Rating"]/zomato_df["Average Cost for Two"])
+     .rename(columns={"x": "Aggregate Rating/Average Cost for Two"})
+     .drop(['Country Code', 'Country'], axis = 'columns')
     )
     
     return zomato_cleaned
