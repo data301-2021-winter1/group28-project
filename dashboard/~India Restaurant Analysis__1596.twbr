@@ -1,0 +1,2691 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xml:base='https://prod-ca-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='IndiaRestaurantAnalysis' path='/t/dkrasnov/workbooks' revision='1.0' site='dkrasnov' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource inline='true' name='Clipboard_20211118T145449' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20211118T145449' name='Clipboard_20211118T145449leaf'>
+            <connection class='textscan' directory='Data' filename='Clipboard_20211118T145449.txt' />
+          </named-connection>
+          <named-connection caption='analysis1-checkpoint' name='textscan.076fcnv1seol0q184wab20sgemyp'>
+            <connection class='textscan' directory='Data/processed 1' filename='analysis1-checkpoint.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.076fcnv1seol0q184wab20sgemyp' name='analysis1-checkpoint.csv' table='[analysis1-checkpoint#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Restaurant Name' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='real' name='Longitude' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='string' name='Cuisines' ordinal='4' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='5' />
+            <column datatype='string' name='Currency' ordinal='6' />
+            <column datatype='string' name='Has Table Booking' ordinal='7' />
+            <column datatype='string' name='Has Online Delivery' ordinal='8' />
+            <column datatype='string' name='Is Delivering Now' ordinal='9' />
+            <column datatype='integer' name='Price Range' ordinal='10' />
+            <column datatype='real' name='Aggregate Rating' ordinal='11' />
+            <column datatype='string' name='Rating Text' ordinal='12' />
+            <column datatype='integer' name='Votes' ordinal='13' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.076fcnv1seol0q184wab20sgemyp' name='analysis1-checkpoint.csv' table='[analysis1-checkpoint#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Restaurant Name' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='real' name='Longitude' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='string' name='Cuisines' ordinal='4' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='5' />
+            <column datatype='string' name='Currency' ordinal='6' />
+            <column datatype='string' name='Has Table Booking' ordinal='7' />
+            <column datatype='string' name='Has Online Delivery' ordinal='8' />
+            <column datatype='string' name='Is Delivering Now' ordinal='9' />
+            <column datatype='integer' name='Price Range' ordinal='10' />
+            <column datatype='real' name='Aggregate Rating' ordinal='11' />
+            <column datatype='string' name='Rating Text' ordinal='12' />
+            <column datatype='integer' name='Votes' ordinal='13' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurant Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Restaurant Name]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Restaurant Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cuisines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cuisines]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Cuisines</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Cost for Two</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Cost for Two]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Average Cost for Two</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Currency]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Currency</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Table Booking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Table Booking]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Has Table Booking</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Online Delivery</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Online Delivery]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Has Online Delivery</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Delivering Now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is Delivering Now]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Is Delivering Now</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price Range]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Price Range</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Aggregate Rating</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rating Text]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Rating Text</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Votes]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Votes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating/Average Cost for Two</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating/Average Cost for Two]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Aggregate Rating/Average Cost for Two</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='analysis1-checkpoint.csv' datatype='table' name='[__tableau_internal_object_id__].[analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='analysis1-checkpoint.csv' id='analysis1-checkpoint.csv_253BD01D074444E3969838D98C321A09'>
+            <properties context=''>
+              <relation connection='textscan.076fcnv1seol0q184wab20sgemyp' name='analysis1-checkpoint.csv' table='[analysis1-checkpoint#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='Restaurant Name' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='real' name='Longitude' ordinal='2' />
+                  <column datatype='real' name='Latitude' ordinal='3' />
+                  <column datatype='string' name='Cuisines' ordinal='4' />
+                  <column datatype='integer' name='Average Cost for Two' ordinal='5' />
+                  <column datatype='string' name='Currency' ordinal='6' />
+                  <column datatype='string' name='Has Table Booking' ordinal='7' />
+                  <column datatype='string' name='Has Online Delivery' ordinal='8' />
+                  <column datatype='string' name='Is Delivering Now' ordinal='9' />
+                  <column datatype='integer' name='Price Range' ordinal='10' />
+                  <column datatype='real' name='Aggregate Rating' ordinal='11' />
+                  <column datatype='string' name='Rating Text' ordinal='12' />
+                  <column datatype='integer' name='Votes' ordinal='13' />
+                  <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='DF_for_Cost_and_budEff' inline='true' name='federated.0b107us0ronptj17ab77c1m4pa34' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DF_for_Cost_and_budEff' name='textscan.0d8oh6d1ium72011xwx7b1bjl6et'>
+            <connection class='textscan' directory='Data/processed 2' filename='DF_for_Cost_and_budEff.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0d8oh6d1ium72011xwx7b1bjl6et' name='DF_for_Cost_and_budEff.csv' table='[DF_for_Cost_and_budEff#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='1' />
+            <column datatype='string' name='Has Table Booking' ordinal='2' />
+            <column datatype='string' name='Has Online Delivery' ordinal='3' />
+            <column datatype='string' name='Is Delivering Now' ordinal='4' />
+            <column datatype='integer' name='Price Range' ordinal='5' />
+            <column datatype='real' name='Aggregate Rating' ordinal='6' />
+            <column datatype='integer' name='Votes' ordinal='7' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='8' />
+            <column datatype='real' name='Longitude_Of_City' ordinal='9' />
+            <column datatype='real' name='Latitude_Of_City' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0d8oh6d1ium72011xwx7b1bjl6et' name='DF_for_Cost_and_budEff.csv' table='[DF_for_Cost_and_budEff#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='1' />
+            <column datatype='string' name='Has Table Booking' ordinal='2' />
+            <column datatype='string' name='Has Online Delivery' ordinal='3' />
+            <column datatype='string' name='Is Delivering Now' ordinal='4' />
+            <column datatype='integer' name='Price Range' ordinal='5' />
+            <column datatype='real' name='Aggregate Rating' ordinal='6' />
+            <column datatype='integer' name='Votes' ordinal='7' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='8' />
+            <column datatype='real' name='Longitude_Of_City' ordinal='9' />
+            <column datatype='real' name='Latitude_Of_City' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Cost for Two</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Cost for Two]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Average Cost for Two</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Table Booking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Table Booking]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Has Table Booking</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Online Delivery</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Online Delivery]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Has Online Delivery</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Delivering Now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is Delivering Now]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Is Delivering Now</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price Range]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Price Range</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Aggregate Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Votes]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Votes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating/Average Cost for Two</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating/Average Cost for Two]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Aggregate Rating/Average Cost for Two</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude_Of_City</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude_Of_City]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Longitude_Of_City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude_Of_City</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude_Of_City]</local-name>
+            <parent-name>[DF_for_Cost_and_budEff.csv]</parent-name>
+            <remote-alias>Latitude_Of_City</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='Avg' caption='Latitude Of City' datatype='real' name='[Latitude_Of_City]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude Of City' datatype='real' name='[Longitude_Of_City]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DF_for_Cost_and_budEff.csv' datatype='table' name='[__tableau_internal_object_id__].[DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D]' role='measure' type='quantitative' />
+      <group caption='Action (City)' hidden='true' name='[Action (City)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[City]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DF_for_Cost_and_budEff.csv' id='DF_for_Cost_and_budEff.csv_7FA0EDD3D10443DEA75D38FDFC8E669D'>
+            <properties context=''>
+              <relation connection='textscan.0d8oh6d1ium72011xwx7b1bjl6et' name='DF_for_Cost_and_budEff.csv' table='[DF_for_Cost_and_budEff#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='City' ordinal='0' />
+                  <column datatype='integer' name='Average Cost for Two' ordinal='1' />
+                  <column datatype='string' name='Has Table Booking' ordinal='2' />
+                  <column datatype='string' name='Has Online Delivery' ordinal='3' />
+                  <column datatype='string' name='Is Delivering Now' ordinal='4' />
+                  <column datatype='integer' name='Price Range' ordinal='5' />
+                  <column datatype='real' name='Aggregate Rating' ordinal='6' />
+                  <column datatype='integer' name='Votes' ordinal='7' />
+                  <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='8' />
+                  <column datatype='real' name='Longitude_Of_City' ordinal='9' />
+                  <column datatype='real' name='Latitude_Of_City' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='DF_for_Aggrating' inline='true' name='federated.0mocqlf1ksm8b61e7bj3i1521jad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DF_for_Aggrating' name='textscan.007s9me1wderl411pw4vy1uprq6b'>
+            <connection class='textscan' directory='Data/processed 2' filename='DF_for_Aggrating.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.007s9me1wderl411pw4vy1uprq6b' name='DF_for_Aggrating.csv' table='[DF_for_Aggrating#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='1' />
+            <column datatype='string' name='Has Table Booking' ordinal='2' />
+            <column datatype='string' name='Has Online Delivery' ordinal='3' />
+            <column datatype='string' name='Is Delivering Now' ordinal='4' />
+            <column datatype='integer' name='Price Range' ordinal='5' />
+            <column datatype='real' name='Aggregate Rating' ordinal='6' />
+            <column datatype='integer' name='Votes' ordinal='7' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='8' />
+            <column datatype='real' name='Longitude_Of_City' ordinal='9' />
+            <column datatype='real' name='Latitude_Of_City' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.007s9me1wderl411pw4vy1uprq6b' name='DF_for_Aggrating.csv' table='[DF_for_Aggrating#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='1' />
+            <column datatype='string' name='Has Table Booking' ordinal='2' />
+            <column datatype='string' name='Has Online Delivery' ordinal='3' />
+            <column datatype='string' name='Is Delivering Now' ordinal='4' />
+            <column datatype='integer' name='Price Range' ordinal='5' />
+            <column datatype='real' name='Aggregate Rating' ordinal='6' />
+            <column datatype='integer' name='Votes' ordinal='7' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='8' />
+            <column datatype='real' name='Longitude_Of_City' ordinal='9' />
+            <column datatype='real' name='Latitude_Of_City' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Cost for Two</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Cost for Two]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Average Cost for Two</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Table Booking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Table Booking]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Has Table Booking</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Online Delivery</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Online Delivery]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Has Online Delivery</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Delivering Now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is Delivering Now]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Is Delivering Now</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price Range]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Price Range</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Aggregate Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Votes]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Votes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating/Average Cost for Two</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating/Average Cost for Two]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Aggregate Rating/Average Cost for Two</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude_Of_City</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude_Of_City]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Longitude_Of_City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude_Of_City</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude_Of_City]</local-name>
+            <parent-name>[DF_for_Aggrating.csv]</parent-name>
+            <remote-alias>Latitude_Of_City</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='Avg' caption='Latitude Of City' datatype='real' name='[Latitude_Of_City]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude Of City' datatype='real' name='[Longitude_Of_City]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DF_for_Aggrating.csv' datatype='table' name='[__tableau_internal_object_id__].[DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB]' role='measure' type='quantitative' />
+      <column-instance column='[Latitude_Of_City]' derivation='None' name='[none:Latitude_Of_City:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Longitude_Of_City]' derivation='None' name='[none:Longitude_Of_City:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (City)' hidden='true' name='[Action (City)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[City]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Latitude Of City,Longitude Of City)' hidden='true' name='[Action (Latitude Of City,Longitude Of City)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Latitude_Of_City:ok]' />
+          <groupfilter function='level-members' level='[none:Longitude_Of_City:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DF_for_Aggrating.csv' id='DF_for_Aggrating.csv_3331B86A4FFC43429D45D14DDD9A0EBB'>
+            <properties context=''>
+              <relation connection='textscan.007s9me1wderl411pw4vy1uprq6b' name='DF_for_Aggrating.csv' table='[DF_for_Aggrating#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='City' ordinal='0' />
+                  <column datatype='integer' name='Average Cost for Two' ordinal='1' />
+                  <column datatype='string' name='Has Table Booking' ordinal='2' />
+                  <column datatype='string' name='Has Online Delivery' ordinal='3' />
+                  <column datatype='string' name='Is Delivering Now' ordinal='4' />
+                  <column datatype='integer' name='Price Range' ordinal='5' />
+                  <column datatype='real' name='Aggregate Rating' ordinal='6' />
+                  <column datatype='integer' name='Votes' ordinal='7' />
+                  <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='8' />
+                  <column datatype='real' name='Longitude_Of_City' ordinal='9' />
+                  <column datatype='real' name='Latitude_Of_City' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='analysis1' inline='true' name='federated.0ntt26111r3myp1ciwliy0l7euu3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='analysis1' name='textscan.0a9t7kh1fo0puz19ire7l1op5k07'>
+            <connection class='textscan' directory='Data/processed' filename='analysis1-checkpoint.csv' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0a9t7kh1fo0puz19ire7l1op5k07' name='analysis1-checkpoint.csv' table='[analysis1-checkpoint#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Restaurant Name' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='real' name='Longitude' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='string' name='Cuisines' ordinal='4' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='5' />
+            <column datatype='string' name='Currency' ordinal='6' />
+            <column datatype='string' name='Has Table Booking' ordinal='7' />
+            <column datatype='string' name='Has Online Delivery' ordinal='8' />
+            <column datatype='string' name='Is Delivering Now' ordinal='9' />
+            <column datatype='integer' name='Price Range' ordinal='10' />
+            <column datatype='real' name='Aggregate Rating' ordinal='11' />
+            <column datatype='string' name='Rating Text' ordinal='12' />
+            <column datatype='integer' name='Votes' ordinal='13' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0a9t7kh1fo0puz19ire7l1op5k07' name='analysis1-checkpoint.csv' table='[analysis1-checkpoint#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Restaurant Name' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='real' name='Longitude' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='string' name='Cuisines' ordinal='4' />
+            <column datatype='integer' name='Average Cost for Two' ordinal='5' />
+            <column datatype='string' name='Currency' ordinal='6' />
+            <column datatype='string' name='Has Table Booking' ordinal='7' />
+            <column datatype='string' name='Has Online Delivery' ordinal='8' />
+            <column datatype='string' name='Is Delivering Now' ordinal='9' />
+            <column datatype='integer' name='Price Range' ordinal='10' />
+            <column datatype='real' name='Aggregate Rating' ordinal='11' />
+            <column datatype='string' name='Rating Text' ordinal='12' />
+            <column datatype='integer' name='Votes' ordinal='13' />
+            <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurant Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Restaurant Name]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Restaurant Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cuisines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cuisines]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Cuisines</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Cost for Two</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Cost for Two]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Average Cost for Two</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Currency]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Currency</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Table Booking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Table Booking]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Has Table Booking</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Online Delivery</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has Online Delivery]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Has Online Delivery</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Delivering Now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is Delivering Now]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Is Delivering Now</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price Range]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Price Range</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Aggregate Rating</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rating Text]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Rating Text</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Votes]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Votes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregate Rating/Average Cost for Two</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Aggregate Rating/Average Cost for Two]</local-name>
+            <parent-name>[analysis1-checkpoint.csv]</parent-name>
+            <remote-alias>Aggregate Rating/Average Cost for Two</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='analysis1.csv' datatype='table' name='[__tableau_internal_object_id__].[analysis1.csv_84E59E032EFD41C694A95216CD10EBE2]' role='measure' type='quantitative' />
+      <column-instance column='[City]' derivation='Attribute' name='[attr:City:nk]' pivot='key' type='nominal' />
+      <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+      <group caption='Action (City)' hidden='true' name='[Action (City)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[City]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:City:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Gurgaon&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Allahabad&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bangalore&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bhubaneshwar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kolkata&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Hyderabad&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Delhi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mohali&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dehradun&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Pune&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Amritsar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Faridabad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Noida&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Secunderabad&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Varanasi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nagpur&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Lucknow&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ghaziabad&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aurangabad&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chennai&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nashik&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Panchkula&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bhopal&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:City:nk]' palette='purple_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Gurgaon&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Allahabad&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bhubaneshwar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Delhi&quot;</bucket>
+            </map>
+            <map to='#7c4d79'>
+              <bucket>&quot;Secunderabad&quot;</bucket>
+            </map>
+            <map to='#875a87'>
+              <bucket>&quot;Pune&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dehradun&quot;</bucket>
+            </map>
+            <map to='#946692'>
+              <bucket>&quot;Panchkula&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Amritsar&quot;</bucket>
+            </map>
+            <map to='#a5729b'>
+              <bucket>&quot;Mohali&quot;</bucket>
+            </map>
+            <map to='#b57ea3'>
+              <bucket>&quot;Lucknow&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Faridabad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Noida&quot;</bucket>
+            </map>
+            <map to='#c28caf'>
+              <bucket>&quot;Kolkata&quot;</bucket>
+            </map>
+            <map to='#cd9bbc'>
+              <bucket>&quot;Hyderabad&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Varanasi&quot;</bucket>
+            </map>
+            <map to='#d9aaca'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nagpur&quot;</bucket>
+            </map>
+            <map to='#e5b8d8'>
+              <bucket>&quot;Chennai&quot;</bucket>
+            </map>
+            <map to='#eec9e5'>
+              <bucket>&quot;Bangalore&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ghaziabad&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Aurangabad&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nashik&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bhopal&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='analysis1.csv' id='analysis1.csv_84E59E032EFD41C694A95216CD10EBE2'>
+            <properties context=''>
+              <relation connection='textscan.0a9t7kh1fo0puz19ire7l1op5k07' name='analysis1-checkpoint.csv' table='[analysis1-checkpoint#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Restaurant Name' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='real' name='Longitude' ordinal='2' />
+                  <column datatype='real' name='Latitude' ordinal='3' />
+                  <column datatype='string' name='Cuisines' ordinal='4' />
+                  <column datatype='integer' name='Average Cost for Two' ordinal='5' />
+                  <column datatype='string' name='Currency' ordinal='6' />
+                  <column datatype='string' name='Has Table Booking' ordinal='7' />
+                  <column datatype='string' name='Has Online Delivery' ordinal='8' />
+                  <column datatype='string' name='Is Delivering Now' ordinal='9' />
+                  <column datatype='integer' name='Price Range' ordinal='10' />
+                  <column datatype='real' name='Aggregate Rating' ordinal='11' />
+                  <column datatype='string' name='Rating Text' ordinal='12' />
+                  <column datatype='integer' name='Votes' ordinal='13' />
+                  <column datatype='real' name='Aggregate Rating/Average Cost for Two' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_1FC9D2E8457A43069F482A77A2B3C703]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 5' type='sheet' worksheet='Which city should I live in for the best restuarants (by mean score)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 5' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_63BCD2389445419CA15AC14432A6069B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 5' type='sheet' worksheet='Map with Size Based on Avg Cost for 2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 5' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_E390BECB5C014AC49BCB0F81B52D50D4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 5' type='sheet' worksheet='Map with Size Based on Agg Rating' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 5' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Agg Rating by City'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DF_for_Aggrating' name='federated.0mocqlf1ksm8b61e7bj3i1521jad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mocqlf1ksm8b61e7bj3i1521jad'>
+            <column datatype='real' name='[Aggregate Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Aggregate Rating]' derivation='Avg' name='[avg:Aggregate Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[none:City:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0mocqlf1ksm8b61e7bj3i1521jad].[none:City:nk]</rows>
+        <cols>[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]</cols>
+      </table>
+      <simple-id uuid='{8C226B9C-5D56-413F-9FFA-6494C70FCBDB}' />
+    </worksheet>
+    <worksheet name='Best City on a budget'>
+      <repository-location id='BestCityonabudget' path='/t/dkrasnov/workbooks/IndiaRestaurantAnalysis' revision='' site='dkrasnov' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis1' name='federated.0ntt26111r3myp1ciwliy0l7euu3' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ntt26111r3myp1ciwliy0l7euu3'>
+            <column datatype='integer' name='[Average Cost for Two]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Average Cost for Two]' derivation='Avg' name='[avg:Average Cost for Two:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action3_3BB363A9D39B4AD8AF3C5FC4B0A3C850]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Average Cost for Two])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' direction='ASC' using='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Average Cost for Two:qk]' />
+          <slices>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]</column>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Average Cost for Two:qk]' field-type='quantitative' max='772.87352784899997' min='400.0' range-type='fixed' reverse='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Average Cost for Two:qk]' scope='rows' value='Average Cost For Two by City (₹)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Average Cost for Two:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Average Cost for Two:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{EC3B783B-38B1-4ADF-A17F-DC23C3C7512C}' />
+    </worksheet>
+    <worksheet name='Map with Size Based on Agg Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Map with Size Based on Agg Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DF_for_Aggrating' name='federated.0mocqlf1ksm8b61e7bj3i1521jad' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0mocqlf1ksm8b61e7bj3i1521jad'>
+            <column datatype='real' name='[Aggregate Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude Of City' datatype='real' name='[Latitude_Of_City]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude Of City' datatype='real' name='[Longitude_Of_City]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[City]' derivation='Attribute' name='[attr:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Aggregate Rating]' derivation='Avg' name='[avg:Aggregate Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Latitude_Of_City]' derivation='None' name='[none:Latitude_Of_City:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude_Of_City]' derivation='None' name='[none:Longitude_Of_City:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action5_2EF36F18B9E84A0EB46B23D847558901]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' included-values='in-range'>
+            <min>3.1000000000000001</min>
+            <max>4.5</max>
+          </filter>
+          <slices>
+            <column>[federated.0mocqlf1ksm8b61e7bj3i1521jad].[Action (City)]</column>
+            <column>[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' value='Average Aggregate Rating'>
+              <formatted-text>
+                <run>Average Aggregate Rating</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+            <format attr='title' field='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' value='Average Aggregate Rating'>
+              <formatted-text>
+                <run>Average Aggregate Rating</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' />
+              <tooltip column='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[attr:City:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0mocqlf1ksm8b61e7bj3i1521jad].[none:Longitude_Of_City:qk]</rows>
+        <cols>[federated.0mocqlf1ksm8b61e7bj3i1521jad].[none:Latitude_Of_City:qk]</cols>
+      </table>
+      <simple-id uuid='{96D059C4-BF34-467D-A93E-37012811A2EB}' />
+    </worksheet>
+    <worksheet name='Map with Size Based on Avg Cost for 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DF_for_Cost_and_budEff' name='federated.0b107us0ronptj17ab77c1m4pa34' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0b107us0ronptj17ab77c1m4pa34'>
+            <column datatype='integer' name='[Average Cost for Two]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude Of City' datatype='real' name='[Latitude_Of_City]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude Of City' datatype='real' name='[Longitude_Of_City]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[City]' derivation='Attribute' name='[attr:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Average Cost for Two]' derivation='Avg' name='[avg:Average Cost for Two:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Latitude_Of_City]' derivation='None' name='[none:Latitude_Of_City:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude_Of_City]' derivation='None' name='[none:Longitude_Of_City:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0b107us0ronptj17ab77c1m4pa34].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action1_1FC9D2E8457A43069F482A77A2B3C703]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0b107us0ronptj17ab77c1m4pa34].[Action (City)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#25106f</color>
+                <color>#321d7a</color>
+                <color>#402c86</color>
+                <color>#513e92</color>
+                <color>#63529e</color>
+                <color>#7769a9</color>
+                <color>#8d81b5</color>
+                <color>#a49cc1</color>
+                <color>#beb9cd</color>
+                <color>#d9d9d9</color>
+                <color>#d2bdcf</color>
+                <color>#cca2c5</color>
+                <color>#c689bb</color>
+                <color>#bf71b2</color>
+                <color>#b95ba9</color>
+                <color>#b346a0</color>
+                <color>#ac3297</color>
+                <color>#a61f8f</color>
+                <color>#a00e87</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' value='Average Cost for Two (₹)'>
+              <formatted-text>
+                <run>Average Cost for Two (₹)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' />
+              <color column='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' />
+              <tooltip column='[federated.0b107us0ronptj17ab77c1m4pa34].[attr:City:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0b107us0ronptj17ab77c1m4pa34].[none:Longitude_Of_City:qk]</rows>
+        <cols>[federated.0b107us0ronptj17ab77c1m4pa34].[none:Latitude_Of_City:qk]</cols>
+      </table>
+      <simple-id uuid='{552021C3-006D-4491-A3C3-1F45FD88A5E3}' />
+    </worksheet>
+    <worksheet name='Map with Size Based on Budget Eff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DF_for_Cost_and_budEff' name='federated.0b107us0ronptj17ab77c1m4pa34' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0b107us0ronptj17ab77c1m4pa34'>
+            <column datatype='real' name='[Aggregate Rating/Average Cost for Two]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Avg' caption='Latitude Of City' datatype='real' name='[Latitude_Of_City]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude Of City' datatype='real' name='[Longitude_Of_City]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[City]' derivation='Attribute' name='[attr:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Aggregate Rating/Average Cost for Two]' derivation='Avg' name='[avg:Aggregate Rating/Average Cost for Two:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Latitude_Of_City]' derivation='None' name='[none:Latitude_Of_City:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude_Of_City]' derivation='None' name='[none:Longitude_Of_City:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Aggregate Rating/Average Cost for Two:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Aggregate Rating/Average Cost for Two:qk]' />
+              <color column='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Aggregate Rating/Average Cost for Two:qk]' />
+              <tooltip column='[federated.0b107us0ronptj17ab77c1m4pa34].[attr:City:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0b107us0ronptj17ab77c1m4pa34].[none:Longitude_Of_City:qk]</rows>
+        <cols>[federated.0b107us0ronptj17ab77c1m4pa34].[none:Latitude_Of_City:qk]</cols>
+      </table>
+      <simple-id uuid='{CFB1BB4B-5F3B-41F9-AB03-6CFA8D02E3A0}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Best rating per dollar spent&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Sheet4' path='/t/dkrasnov/workbooks/IndiaRestaurantAnalysis' revision='' site='dkrasnov' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis1' name='federated.0ntt26111r3myp1ciwliy0l7euu3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntt26111r3myp1ciwliy0l7euu3'>
+            <column datatype='real' name='[Aggregate Rating/Average Cost for Two]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Aggregate Rating/Average Cost for Two]' derivation='Avg' name='[avg:Aggregate Rating/Average Cost for Two:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action4_F049A3904D3C409CA44E0811816B31E1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Aggregate Rating/Average Cost for Two])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Agra&quot;</bucket>
+              <bucket>&quot;Amritsar&quot;</bucket>
+              <bucket>&quot;Aurangabad&quot;</bucket>
+              <bucket>&quot;Varanasi&quot;</bucket>
+              <bucket>&quot;Nagpur&quot;</bucket>
+              <bucket>&quot;Bhubaneshwar&quot;</bucket>
+              <bucket>&quot;Puducherry&quot;</bucket>
+              <bucket>&quot;Dehradun&quot;</bucket>
+              <bucket>&quot;Bhopal&quot;</bucket>
+              <bucket>&quot;Secunderabad&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]</column>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' value='Rating/Average Cost for Two' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' />
+              <color column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' />
+              <text column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4E1CBCBE-3722-4FE1-83C8-9AEA1B4EEDA8}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <repository-location id='Sheet7' path='/t/dkrasnov/workbooks/IndiaRestaurantAnalysis' revision='' site='dkrasnov' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis1' name='federated.0ntt26111r3myp1ciwliy0l7euu3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntt26111r3myp1ciwliy0l7euu3'>
+            <column datatype='real' name='[Aggregate Rating/Average Cost for Two]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Aggregate Rating/Average Cost for Two]' derivation='Avg' name='[avg:Aggregate Rating/Average Cost for Two:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Aggregate Rating/Average Cost for Two]' derivation='Avg' name='[avg:Aggregate Rating/Average Cost for Two:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Aggregate Rating/Average Cost for Two])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' value='32' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='432' />
+            <format attr='height' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]' value='145' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]' value='true' />
+            <format attr='text-format' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]' value='n#,##0.0000;-#,##0.0000' />
+            <format attr='text-orientation' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]' value='0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' />
+              <lod column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C25D6BB5-E011-4D04-84AA-318F4991F22E}' />
+    </worksheet>
+    <worksheet name='Where are the best restaurants'>
+      <repository-location id='Wherearethebestrestaurants' path='/t/dkrasnov/workbooks/IndiaRestaurantAnalysis' revision='' site='dkrasnov' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis1' name='federated.0ntt26111r3myp1ciwliy0l7euu3' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ntt26111r3myp1ciwliy0l7euu3'>
+            <column datatype='real' name='[Aggregate Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Aggregate Rating]' derivation='Attribute' name='[attr:Aggregate Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Latitude]' derivation='None' name='[none:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action1_66218740672C48BFA45FAD92497374AB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[attr:Aggregate Rating:qk]' included-values='in-range-or-null'>
+            <min>4.9000000000000004</min>
+            <max>4.9000000000000004</max>
+          </filter>
+          <slices>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[attr:Aggregate Rating:qk]</column>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:Longitude:qk]' field-type='quantitative' max='9837327.0352354199' min='5923863.7292356677' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:Latitude:qk]' field-type='quantitative' max='3749547.084160116' min='1496113.3254092571' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <geometry column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:Latitude:qk]</rows>
+        <cols>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:Longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{D35C8F62-D325-42CA-AA9E-C2BBDACDECE5}' />
+    </worksheet>
+    <worksheet name='Which city should I live in for the best restuarants (by mean score)'>
+      <repository-location id='WhichcityshouldIliveinforthebestrestuarantsbymeanscore' path='/t/dkrasnov/workbooks/IndiaRestaurantAnalysis' revision='' site='dkrasnov' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='analysis1' name='federated.0ntt26111r3myp1ciwliy0l7euu3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ntt26111r3myp1ciwliy0l7euu3'>
+            <column datatype='real' name='[Aggregate Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Aggregate Rating]' derivation='Avg' name='[avg:Aggregate Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action4_F049A3904D3C409CA44E0811816B31E1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Aggregate Rating])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]</column>
+            <column>[federated.0ntt26111r3myp1ciwliy0l7euu3].[Action (City)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating:qk]' scope='cols' value='Average Aggregate Rating' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#162041' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-color' value='#75a1c7' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]</rows>
+        <cols>[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating:qk]</cols>
+      </table>
+      <simple-id uuid='{990C3B50-CEEB-469E-9092-354E31DC2213}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <repository-location id='Dashboard3' path='/t/dkrasnov/workbooks/IndiaRestaurantAnalysis' revision='' site='dkrasnov' />
+      <style />
+      <size maxheight='950' maxwidth='1300' minheight='950' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='analysis1' name='federated.0ntt26111r3myp1ciwliy0l7euu3' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ntt26111r3myp1ciwliy0l7euu3'>
+        <column datatype='real' name='[Aggregate Rating]' role='measure' type='quantitative' />
+        <column-instance column='[Aggregate Rating]' derivation='Attribute' name='[attr:Aggregate Rating:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98316' id='5' is-centered='0' is-scaled='1' param='Image/Untitled.png' type-v2='bitmap' w='98770' x='615' y='842'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='31684' id='6' name='Where are the best restaurants' show-title='false' w='39692' x='3154' y='63158' />
+        <zone h='26947' id='7' name='Best City on a budget' show-title='false' w='21769' x='73846' y='64842' />
+        <zone h='24737' id='8' name='Best City on a budget' pane-specification-id='0' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' type-v2='color' w='10308' x='62231' y='66000' />
+        <zone h='33158' id='9' name='Sheet 4' show-title='false' w='35538' x='3077' y='18632' />
+        <zone h='33263' id='11' name='Which city should I live in for the best restuarants (by mean score)' show-title='false' w='43462' x='51538' y='18842' />
+        <zone h='6421' id='14' name='Where are the best restaurants' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[attr:Aggregate Rating:qk]' type-v2='filter' values='database' w='12308' x='44077' y='63053' />
+        <zone forceUpdate='true' h='8526' id='15' type-v2='text' w='16846' x='42769' y='70211'>
+          <formatted-text>
+            <run fontsize='8'>Good Restaurants agg rating = 3.7</run>
+            <run>Æ&#10;</run>
+            <run fontsize='8'>Best Restaurant agg rating = 4.9</run>
+          </formatted-text>
+        </zone>
+        <zone h='29158' id='20' name='Sheet 7' show-title='false' w='7538' x='38538' y='19053' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='57' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='56' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98316' id='5' is-centered='0' is-fixed='true' is-scaled='1' param='Image/Untitled.png' type-v2='bitmap' w='98770' x='615' y='842'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33158' id='9' is-fixed='true' name='Sheet 4' show-title='false' w='35538' x='3077' y='18632'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33263' id='11' is-fixed='true' name='Which city should I live in for the best restuarants (by mean score)' show-title='false' w='43462' x='51538' y='18842'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='277' h='29158' id='20' is-fixed='true' name='Sheet 7' show-title='false' w='7538' x='38538' y='19053'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6421' id='14' name='Where are the best restaurants' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[attr:Aggregate Rating:qk]' type-v2='filter' values='database' w='12308' x='44077' y='63053'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31684' id='6' is-fixed='true' name='Where are the best restaurants' show-title='false' w='39692' x='3154' y='63158'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='26947' id='7' is-fixed='true' name='Best City on a budget' show-title='false' w='21769' x='73846' y='64842'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='24737' id='8' name='Best City on a budget' pane-specification-id='0' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' type-v2='color' w='10308' x='62231' y='66000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8526' id='15' type-v2='text' w='16846' x='42769' y='70211'>
+                  <formatted-text>
+                    <run fontsize='8'>Good Restaurants agg rating = 3.7</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='8'>Best Restaurant agg rating = 4.9</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D55F8B54-60D6-4860-9528-0E11585B666C}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size maxheight='951' maxwidth='1305' minheight='951' minwidth='1305' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='DF_for_Aggrating' name='federated.0mocqlf1ksm8b61e7bj3i1521jad' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0mocqlf1ksm8b61e7bj3i1521jad'>
+        <column datatype='real' name='[Aggregate Rating]' role='measure' type='quantitative' />
+        <column-instance column='[Aggregate Rating]' derivation='Avg' name='[avg:Aggregate Rating:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='29' is-centered='0' param='Image/Theme.png' type-v2='bitmap' w='100000' x='0' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='43007' id='6' name='Map with Size Based on Avg Cost for 2' show-title='false' w='94253' x='3142' y='11672' />
+        <zone h='15563' id='14' type-v2='dashboard-object' w='17011' x='58544' y='57834'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{EEA7939D-0148-4E8C-842F-57115936DE11}&quot; zone-id=&quot;14&quot; zone-ids=[6]</toggle-action>
+            <button-visual-state>
+              <image-path>Image/On_Button.png</image-path>
+            </button-visual-state>
+            <button-visual-state>
+              <image-path>Image/Off_Button.png</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='42797' id='23' name='Map with Size Based on Agg Rating' show-title='false' w='94330' x='3142' y='11777' />
+        <zone h='15563' id='25' type-v2='dashboard-object' w='17011' x='58544' y='62566'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{EEA7939D-0148-4E8C-842F-57115936DE11}&quot; zone-id=&quot;25&quot; zone-ids=[23]</toggle-action>
+            <button-visual-state>
+              <image-path>Image/On_Button.png</image-path>
+            </button-visual-state>
+            <button-visual-state>
+              <image-path>Image/Off_Button.png</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='43007' id='35' name='Which city should I live in for the best restuarants (by mean score)' show-title='false' w='57395' x='1609' y='65931' />
+        <zone h='16614' id='38' param='vert' type-v2='layout-flow' w='34023' x='62912' y='80126'>
+          <zone h='5625' id='36' name='Map with Size Based on Avg Cost for 2' pane-specification-id='4' param='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' type-v2='color' w='34023' x='62912' y='80126'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5625' id='37' name='Map with Size Based on Agg Rating' pane-specification-id='7' param='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' type-v2='color' w='34023' x='62912' y='85751'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5364' id='39' name='Map with Size Based on Agg Rating' param='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' type-v2='filter' values='database' w='34023' x='62912' y='91376'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='47' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98318' id='46' param='vert' type-v2='layout-flow' w='98774' x='613' y='841'>
+                <zone fixed-size='280' h='100000' id='29' is-centered='0' is-fixed='true' param='Image/Theme.png' type-v2='bitmap' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43007' id='6' is-fixed='true' name='Map with Size Based on Avg Cost for 2' show-title='false' w='94253' x='3142' y='11672'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5625' id='36' name='Map with Size Based on Avg Cost for 2' pane-specification-id='4' param='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' type-v2='color' w='34023' x='62912' y='80126'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5364' id='39' name='Map with Size Based on Agg Rating' param='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' type-v2='filter' values='database' w='34023' x='62912' y='91376'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42797' id='23' is-fixed='true' name='Map with Size Based on Agg Rating' show-title='false' w='94330' x='3142' y='11777'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5625' id='37' name='Map with Size Based on Agg Rating' pane-specification-id='7' param='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' type-v2='color' w='34023' x='62912' y='85751'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43007' id='35' is-fixed='true' name='Which city should I live in for the best restuarants (by mean score)' show-title='false' w='57395' x='1609' y='65931'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BD579F47-EAE4-40DA-AFAC-12B345DA4310}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='Where are the best restaurants'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{D5F5FADE-44EF-472F-9606-8115628B2E1C}' />
+    </window>
+    <window class='worksheet' name='Which city should I live in for the best restuarants (by mean score)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C529A300-009C-4F8A-8A29-225BFE8FF68B}' />
+    </window>
+    <window class='worksheet' name='Best City on a budget'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[none:City:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE04C052-7E2A-409E-A32D-2AA2C6A11D3B}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57033DD6-5C0A-4D54-8F30-E5E6A49F253F}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='marks' />
+            <card type='filters' />
+            <card type='pages' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ntt26111r3myp1ciwliy0l7euu3].[avg:Aggregate Rating/Average Cost for Two:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D3BDA642-9B0D-4A27-BDD5-2985E9A5102B}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Best City on a budget'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Where are the best restaurants'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Which city should I live in for the best restuarants (by mean score)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{680C88C4-4BED-4232-9F97-CB8F3C5D212D}' />
+    </window>
+    <window class='worksheet' name='Map with Size Based on Agg Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='7' param='[federated.0mocqlf1ksm8b61e7bj3i1521jad].[avg:Aggregate Rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{C6F428F8-C931-4575-B6DE-0169359A6793}' />
+    </window>
+    <window class='worksheet' name='Map with Size Based on Avg Cost for 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' type='size' />
+            <card pane-specification-id='4' param='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Average Cost for Two:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{E7916EA6-5C43-47B9-9FF7-4DC059971800}' />
+    </window>
+    <window class='worksheet' name='Map with Size Based on Budget Eff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Aggregate Rating/Average Cost for Two:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0b107us0ronptj17ab77c1m4pa34].[avg:Aggregate Rating/Average Cost for Two:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3313AEBB-E86E-4F38-BB07-84A60D069AA2}' />
+    </window>
+    <window class='worksheet' name='Agg Rating by City'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2FAEC629-10C8-4B1A-8372-F9EA633601DF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='Map with Size Based on Agg Rating'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Map with Size Based on Avg Cost for 2'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Which city should I live in for the best restuarants (by mean score)' />
+      </viewpoints>
+      <active id='39' />
+      <simple-id uuid='{EEA7939D-0148-4E8C-842F-57115936DE11}' />
+    </window>
+  </windows>
+</workbook>
